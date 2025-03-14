@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>bestel pagina</title>
+  <link rel="stylesheet" href="bestel.css">
+
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/img/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/icon.png">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <div id="achtergrond">
+    <a href="index.html"><img src="assets/foto/logo.png" alt="logo" id="logo"></a>
+    <h1>Kleurkaart Express</h1>
+    <img src="assets/foto/winkelkar.png" alt="winkelkar" id="winkelkar">
+  </div>
+
+  <div id="lijnboven">
+    <div id="factuur">Bestelformulier</div>
+    <div id="gegevens">Je Gegevens</div>
+  </div>
+
+  <div class="main">
+
+    <!-- <div id="lijnzijkant"></div> -->
+
+    <div id="binnenkant">
+      <div id="titels">
+        Aanhef<br>
+        Naam<br>
+        Geboorte Datum<br><br>
+        E-mailadres<br>
+        Telefoon<br><br>
+        Straatnaam<br>
+        Huisnummer<br>
+        Postcode<br>
+        Land<br>
+        Afleveradres<br>
+        Kleurverpakking<br><br>
+        Nieuwsbrief
+      </div>
+      <form action="doelbestand.css" method="post">
+        <div id="verzendwijze">
+          <input type="radio" name="aanhef" value="Dhr."> Dhr.
+          <input type="radio" name="aanhef" value="Mevr."> Mevr.<br>
+
+          <input type="text" required placeholder="Voornaam">
+          <input type="text" placeholder="TussenV">
+          <input type="text" required placeholder="Achternaam"><br>
+          <input type="date" name="datum"><br><br>
+
+          <input type="email" required><br>
+          <input type="text" required><br><br>
+
+          <input type="text" required placeholder="">
+          <input type="text" required placeholder="Nr.">
+          <input type="text" placeholder="Toev."><br>
+          <input type="text" required placeholder="1234AB"><br>
+
+
+          <input id="county" type="text" name="county" size="40" list="countries">
+          <datalist id="countries">
+            <option value="Belgie">
+            <option value="Canada">
+            <option value="Duitsland">
+            <option value="Nederland">
+            <option value="Engeland">
+            <option value="Frankrijk">
+          </datalist><br>
+
+          <div id="afleveradres"></div>
+          <input type="radio" name="afleveradres" value="Op bovenstaand adres bezorgen"> Op bovenstaand adres bezorgen
+          <input type="radio" name="afleveradres" value="Op ander adres bezorgen"> Op ander adres bezorgen<br>
+          <input type="color"><br><br>
+
+          <input type="checkbox">Ja, ik wil de Kleurkaart Express-nieuwsbrief met €5,- cadeabon voor mijn volgende
+          bestelling<br>
+
+          <input type="submit">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="lijnonderkant">
+    <div id="copyright">© Webshop door Lianne Meiresonne.</div>
+  </div>
+
+</body>
+
+</html>
